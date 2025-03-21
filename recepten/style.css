@@ -1,0 +1,56 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+div{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0 auto;
+    margin-right: 0 auto;
+}
+
+p{
+    font-size: 20px;
+    line-height: 26px;
+}
+
+h1{
+    font-size: 36px;
+    line-height: 36px;
+}
+
+#ingrediënten{
+    font-size: 24px;
+    line-height: 32px;
+}
+
+#bereidingswijze{
+    font-size: 32px;
+    line-height: 32px;
+}
+
+section{
+    margin-bottom: 10px;
+}
+
+.tekst{
+    margin-bottom: 10px;
+}
+
+.tip{
+    background-color: #a6c1b7;
+    border-radius: 4px;
+    padding: 25px;
+}
+
+#pagina {
+    margin: 0 auto;
+    width: 60%;
+    font-size: 20px;
+    line-height: 36px;
+}
+
+img {
+    width: 600px;
+    height: 400px;
+}
