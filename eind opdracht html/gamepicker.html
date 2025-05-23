@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gamepicker</title>
+  <link rel="stylesheet" href="gamestyle.css">
+</head>
+<body>
+  <div class="page-container">
+    <div id="overview">
+      <h2>Overzicht</h2>
+
+      <div class="filters">
+        <label>
+          Genre:
+          <select id="genreFilter">
+            <option value="">Alle genres</option>
+          </select>
+        </label>
+
+        <label>
+          Max prijs:
+          <input type="number" id="priceFilter" placeholder="Bijv. 30">
+        </label>
+
+        <label>
+          Min rating:
+          <input type="number" id="ratingFilter" min="1" max="5" placeholder="Bijv. 3">
+        </label>
+
+        <button onclick="applyFilters()">OK</button>
+      </div>
+
+      <div id="gamesList"></div>
+      <button class="winkelmand-button" onclick="showCart()">Bereken prijs</button>
+    </div>
+
+    <div id="cart" style="display: none;">
+      <h2>Winkelmandje</h2>
+      <div id="cartItems"></div>
+      <div class="totaal-container">
+        Totaalprijs: €<span id="totalPrice">0.00</span>
+      </div>
+    </div>
+  </div>
+
+  <div id="notification"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
